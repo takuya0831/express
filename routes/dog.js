@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 const request = require('request');
 router.get('/', async (req, res) => {
-//ここのアドレスを変更　20240608_1700
 	request('https://dog.ceo/api/breeds/image/random', function (error, response,
 body) {
 if (!error && response.statusCode == 200) {
@@ -12,3 +11,4 @@ res.json(data);
 });
 })
 module.exports = router;
+//更新テスト20240608-1746
